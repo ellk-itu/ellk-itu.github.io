@@ -11,6 +11,6 @@ function draw() {
 
   for (let i = 0; i < 100; i++) {
     fill(color(random(255), random(255), random(255)));
-    circle(mouseX * random(-2, 2), mouseY * random(-2 * 2), 10);
+    circle(mouseX + random(-200, 200), mouseY + random(-200, 200), 10);
   }
 }
