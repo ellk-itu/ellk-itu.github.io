@@ -4,14 +4,13 @@ function preload() {
 
 function setup() {
   createCanvas(windowWidth, windowHeight);
-  // put setup code here
-  const message =
-    "This is a template repository\nfor the course elective Creative Coding\nCommunication Design, Politecnico di Milano";
-  textAlign(CENTER, CENTER);
-  textSize(16);
-  text(message, width / 2, height / 2);
 }
 
 function draw() {
-  // put drawing code here
+  background(100, 100, 100);
+
+  for (let i = 0; i < 100; i++) {
+    fill(color(random(255), random(255), random(255)));
+    circle(mouseX * random(-2, 2), mouseY * random(-2 * 2), 10);
+  }
 }
